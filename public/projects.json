@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Quantum UI",
+    "description": "A design system built for zero-gravity environments. Experimental glassmorphism components with WebGL backdrops.",
+    "tags": ["React", "Three.js", "Framer Motion"],
+    "link": "https://example.com/quantum"
+  },
+  {
+    "title": "Starlight OS",
+    "description": "Concept operating system interface designed around spatial computing and fluid holographic interactions.",
+    "tags": ["Vue", "CSS3D", "WebXR"],
+    "link": "https://example.com/starlight"
+  },
+  {
+    "title": "Nebula Analytics",
+    "description": "Data visualization dashboard turning complex metrics into interactive 3D particle clouds.",
+    "tags": ["D3.js", "WebGL", "TypeScript"],
+    "link": "https://example.com/nebula"
+  },
+  {
+    "title": "Orbital Commerce",
+    "description": "An experimental e-commerce storefront featuring 3D product inspection and physics-based cart interactions.",
+    "tags": ["Svelte", "Cannon.js", "Shopify API"],
+    "link": "https://example.com/orbital"
+  }
+]

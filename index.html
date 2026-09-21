@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#101400" />
+    <title>Kavan — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
+  <body>
+
+    <!-- ── Global Loader ─────────────────────────────────────────────────── -->
+    <div id="global-loader"></div>
+
+    <!-- ── Custom Cursor ─────────────────────────────────────────────────── -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- ── Scrollable Content Layer ──────────────────────────────────────── -->
+    <div id="content-layer">
+      <!-- ── Hero Section ──────────────────────────────────────────────────── -->
+      <section id="hero-section" class="fade-section">
+        <div id="ui-container">
+          <div class="hero-image-wrapper">
+             <img src="/IMG_20251214_092816_621.jpg" alt="Kavan" class="hero-image" />
+          </div>
+          <h1 class="impact-text">Kavan</h1>
+          <p class="tagline">Official Hub — Projects & Work</p>
+        </div>
+        <div class="marquee-wrapper">
+          <div class="marquee">
+            <span>SCROLL OR DRAG TO EXPLORE • KAVAN PORTFOLIO • </span>
+            <span>SCROLL OR DRAG TO EXPLORE • KAVAN PORTFOLIO • </span>
+            <span>SCROLL OR DRAG TO EXPLORE • KAVAN PORTFOLIO • </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Work Section (Image Slider) ─────────────────────────────────────── -->
+      <section id="work-section" class="fade-section">
+        <div class="section-bg-blur"></div>
+        <h2 class="section-title">Selected Work</h2>
+        
+        <div class="image-ticker-wrapper">
+          <div class="image-ticker">
+            <img src="/IMG-20250301-WA0208.jpg" alt="Work 1" />
+            <img src="/IMG_20250322_093829.jpg" alt="Work 2" />
+            <img src="/IMG_20260521_190100.jpg" alt="Work 3" />
+            <img src="/IMG_20260613_120812_1.jpg" alt="Work 4" />
+            <img src="/IMG_20260918_082317_3.jpg" alt="Work 5" />
+            <img src="/IMG_20260920_150916.jpg" alt="Work 6" />
+            <img src="/IMG_4747.jpg" alt="Work 7" />
+            <img src="/WA_1786466021417.jpeg" alt="Work 8" />
+            <!-- Duplicate for infinite scroll -->
+            <img src="/IMG-20250301-WA0208.jpg" alt="Work 1" />
+            <img src="/IMG_20250322_093829.jpg" alt="Work 2" />
+            <img src="/IMG_20260521_190100.jpg" alt="Work 3" />
+            <img src="/IMG_20260613_120812_1.jpg" alt="Work 4" />
+            <img src="/IMG_20260918_082317_3.jpg" alt="Work 5" />
+            <img src="/IMG_20260920_150916.jpg" alt="Work 6" />
+            <img src="/IMG_4747.jpg" alt="Work 7" />
+            <img src="/WA_1786466021417.jpeg" alt="Work 8" />
+          </div>
+        </div>
+
+        <div class="drive-btn-wrapper">
+          <a href="https://drive.google.com/drive/folders/1itVLta2i_EeCAGJVfQ05HidzwDXAyP0F" target="_blank" rel="noopener noreferrer" class="drive-btn">
+            FOR MORE PICS CLICK HERE
+          </a>
+        </div>
+
+        <!-- ── Video Section ─────────────────────────────────────────────── -->
+        <div class="video-section">
+          <div class="video-grid">
+            <div class="video-card">
+              <video src="/lv_0_20260719193006.mp4" controls preload="metadata" playsinline class="portfolio-video"></video>
+            </div>
+            <div class="video-card">
+              <video src="/lv_0_20260908072123.mp4" controls preload="metadata" playsinline class="portfolio-video"></video>
+            </div>
+          </div>
+          <div class="drive-btn-wrapper">
+            <a href="https://drive.google.com/drive/folders/1TC9Bt57LadsSsLIF2q3SPFUjBDuREa2j" target="_blank" rel="noopener noreferrer" class="drive-btn">
+              FOR MORE VIDEOS CLICK HERE
+            </a>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+
+
+    <!-- ── Lightbox ──────────────────────────────────────────────────────── -->
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
+      <button id="lightbox-close" title="Close (ESC)">✕</button>
+      <figure class="lightbox-figure">
+        <img id="lightbox-img" src="" alt="Full resolution photo" style="display: none;" />
+        <video id="lightbox-video" src="" controls style="display: none; width: 100%; max-height: 80dvh; border-radius: 8px; box-shadow: 0 0 60px rgba(210,255,0,0.2);"></video>
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+    </div>
+
+    <!-- ── FPS debug badge ───────────────────────────────────────────────── -->
+    <div id="fps-badge">FPS: —</div>
+
+    <!-- ── WebGL canvas ──────────────────────────────────────────────────── -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- ── Footer ───────────────────────────────────────────────────────────── -->
+    <footer id="site-footer">
+      <div class="footer-links">
+        <a href="https://www.instagram.com/cjk_creations_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/kavanpg/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:kavanpg305@gmail.com">Email</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
